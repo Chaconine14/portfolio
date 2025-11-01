@@ -1,5 +1,6 @@
 @use "../foundation/variables";
 
-main {
-    background-color: aquamarine;
+.l-main__bg {
+    background: linear-gradient(variables.$color-white 0%, variables.$color-beige 10%, variables.$color-blue 71%, variables.$color-navy 100%);
+
 }

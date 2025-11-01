@@ -1,1 +1,29 @@
 @use "../foundation/variables";
+
+.l-footer {
+    width: 100%;
+    position: relative;
+
+    &__bg {
+        width: 100%;
+        display: block;
+    }
+
+    small {
+        position: absolute;
+        bottom: 8px;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+
+        @include variables.media-tb {
+            bottom: 4px;
+        }
+
+        @include variables.media-sp {
+            bottom: 1px;
+            font-size: 0.6rem;
+        }
+    }
+}

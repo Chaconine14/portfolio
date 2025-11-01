@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+h1 {
+  display: none;
+}
+
 .l-header {
   height: 140px;
   transition: transform 0.3s ease;
@@ -48,8 +52,36 @@ body.no-scroll {
   overflow: hidden;
 }
 
-main {
-  background-color: aquamarine;
+.l-main__bg {
+  background: linear-gradient(#FFF 0%, #EAE3DD 10%, #41A4BE 71%, #131E3E 100%);
+}
+
+.l-footer {
+  width: 100%;
+  position: relative;
+}
+.l-footer__bg {
+  width: 100%;
+  display: block;
+}
+.l-footer small {
+  position: absolute;
+  bottom: 8px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+}
+@media (max-width: 1024px) {
+  .l-footer small {
+    bottom: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .l-footer small {
+    bottom: 1px;
+    font-size: 0.6rem;
+  }
 }
 
 .p-header__nav {
