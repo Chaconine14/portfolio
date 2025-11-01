@@ -1,0 +1,32 @@
+@use "../foundation/variables";
+
+.l-header {
+    height: 140px;
+    transition: transform 0.3s ease; // ← アニメーションはここで統一！
+
+    @include variables.media-tb {
+        height: 50px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateX(100%); // ← 初期状態は右に隠す
+        transition: transform 0.3s ease;
+
+        &.is-open {
+            transform: translateX(0); // ← 開くと右からスライドイン
+        }
+
+        &.is-close {
+            transform: translateX(100%); // ← 閉じると右にスライドアウト
+        }
+    }
+}
+
+body.no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}

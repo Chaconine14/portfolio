@@ -1,0 +1,154 @@
+@use "../../foundation/variables";
+
+.p-header__nav {
+    height: 100%;
+}
+
+
+.p-header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+
+.l-header.is-open {
+    @include variables.media-tb {
+        .p-header__list {
+
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 50px;
+        }
+    }
+
+    .p-header__item {
+        a {
+            color: variables.$color-white;
+        }
+    }
+}
+
+.l-header.is-close {
+    a {
+        @include variables.media-tb {
+            font-size: 0;
+        }
+
+    }
+}
+
+
+.p-header__item {
+    @include variables.font-en(3.6rem, 700, 1.3);
+}
+
+
+.p-header__btn {
+    display: none;
+
+    @include variables.media-tb {
+        height: 50px;
+        width: 50px;
+        display: block;
+        position: fixed;
+        right: 0;
+        z-index: 10;
+
+        p {
+            display: none;
+        }
+    }
+}
+
+
+
+
+.p-header__btn::before {
+    //ハンバーガーの円
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid variables.$color-blue;
+    margin: 0 auto;
+}
+
+.p-header__btn.is-open::before {
+    display: none;
+}
+
+
+
+.p-header__btn.is-close {
+    span::before {
+        position: absolute;
+        bottom: 8px;
+        left: 0px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: variables.$color-blue;
+        transition: 0.2s;
+    }
+
+    span {
+        position: absolute;
+        top: 24px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: variables.$color-blue;
+    }
+
+    span::after {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: variables.$color-blue;
+        transition: 0.5s;
+    }
+}
+
+
+
+.p-header__btn.is-open {
+    span::before {
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: variables.$color-white;
+        transition: 0.2s;
+        transform: rotate(-135deg);
+    }
+
+    span {
+        position: absolute;
+        top: 24px;
+        left: 14px;
+        content: "";
+        height: 0; //見えなくしている
+    }
+
+    span::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: variables.$color-white;
+        transition: 0.2s;
+        transform: rotate(-45deg);
+    }
+}

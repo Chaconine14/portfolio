@@ -1,0 +1,21 @@
+@use "./variables";
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$color-gray;
+}
+
+li {
+    list-style: none;
+}
