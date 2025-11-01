@@ -1,0 +1,48 @@
+@use "../../foundation/variables";
+
+.c-text-box {
+    margin: 95px;
+    padding: 70px;
+    background-color: variables.$color-white;
+
+    @include variables.media-tb {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    @include variables.media-sp {
+        margin: 30px;
+        padding: 30px;
+    }
+}
+
+
+.c-text-box h2 {
+    @include variables.font-en(3.6rem, 700, 1.3);
+    text-align: center;
+    padding-bottom: 70px;
+
+    @include variables.media-tb {
+        @include variables.font-en(2.8rem, 700, 1.3);
+        padding-bottom: 50px
+    }
+
+    @include variables.media-sp {
+        @include variables.font-en(2.2rem, 700, 1.3);
+        padding-bottom: 30px
+    }
+}
+
+
+
+.c-text-box p {
+    @include variables.font-jp(1.6rem, 400, 3.2rem);
+
+    @include variables.media-tb {
+        @include variables.font-jp(1.4rem, 400, 2.8rem);
+    }
+
+    @include variables.media-sp {
+        @include variables.font-jp(1.2rem, 400, 2.4rem);
+    }
+}

@@ -1,1 +1,115 @@
 @use "../../foundation/variables";
+
+.p-about {
+    b {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        padding-bottom: 90px;
+
+        @include variables.media-sp {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.p-about-wrap {
+    display: flex;
+    gap: 25px;
+
+    @include variables.media-sp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 35%;
+        height: auto;
+        object-fit: contain;
+
+        @include variables.media-sp {
+            width: 50%;
+        }
+    }
+}
+
+.p-about-wrap__text-area {
+    position: relative;
+
+    p {
+        padding: 45px;
+    }
+}
+
+.p-about-wrap__text-area {
+
+    .p-about-deco__span::before,
+    .p-about-deco__span::after,
+    .p-about-deco__p::before,
+    .p-about-deco__p::after {
+        content: "";
+        position: absolute;
+        background-color: variables.$color-gray;
+    }
+
+    .p-about-deco__span::before {
+        width: 150px;
+        height: 1px;
+        bottom: 0;
+        right: 0;
+
+        @include variables.media-sp {
+            width: 120px;
+            bottom: 15px;
+        }
+    }
+
+    .p-about-deco__span::after {
+
+        width: 1px;
+        height: 100px;
+        bottom: -20px;
+        right: 20px;
+
+        @include variables.media-sp {
+            height: 70px;
+            bottom: -5px;
+        }
+    }
+
+    .p-about-deco__p::before {
+        width: 150px;
+        height: 1px;
+        top: 0;
+        left: 0;
+
+        @include variables.media-sp {
+            width: 120px;
+            top: 15px;
+
+        }
+
+    }
+
+    .p-about-deco__p::after {
+        width: 1px;
+        height: 100px;
+        top: -20px;
+        left: 20px;
+
+        @include variables.media-sp {
+            height: 70px;
+            top: -5px;
+        }
+    }
+}
+
+.p-about__text-space {
+    display: block;
+    height: 2.5rem;
+
+    @include variables.media-tb {
+        height: 1.8rem;
+    }
+}
