@@ -1,0 +1,22 @@
+@use "../../foundation/variables";
+
+.p-logo-area {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.p-logo {
+    width: 250px;
+    display: block;
+    transform: translateY(-140px);
+
+    @include variables.media-tb {
+        transform: translateY(0);
+        width: 143px;
+    }
+
+    @include variables.media-sp {
+        width: 88px;
+    }
+}
