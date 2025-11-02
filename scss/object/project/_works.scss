@@ -1,1 +1,55 @@
 @use "../../foundation/variables";
+
+.p-works {
+    h3 {
+        @include variables.font-jp(1.8rem, 700, 1.4);
+        padding: 20px;
+
+        @include variables.media-sp {
+            font-size: 1.6rem
+        }
+
+        span {
+            @include variables.font-en(1.8rem, 700, 1.4);
+
+            @include variables.media-sp {
+                font-size: 1.6rem
+            }
+        }
+    }
+}
+
+.p-works__img {
+    width: 100%;
+
+    @include variables.media-tb {
+        width: 80%;
+    }
+}
+
+
+.p-works__grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include variables.media-tb {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 55px
+    }
+
+    @include variables.media-sp {
+        gap: 50px
+    }
+}
+
+.p-works__item {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.p-works__link-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

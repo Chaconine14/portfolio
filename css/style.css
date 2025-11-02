@@ -133,6 +133,39 @@ body.no-scroll {
   }
 }
 
+.c-link-btn__github {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.c-link-btn__github img {
+  width: 20px;
+  height: auto;
+}
+
+.c-link-btn__github,
+.c-link-btn__viewmore {
+  background: #555;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: #303030;
+  color: #FFF;
+  width: 140px;
+  padding: 15px 10px;
+}
+@media (max-width: 768px) {
+  .c-link-btn__github,
+.c-link-btn__viewmore {
+    font-size: 1.4rem;
+    width: 125px;
+    padding: 12px 7px;
+  }
+}
+
 .c-text-box {
   margin: 95px;
   padding: 70px;
@@ -685,5 +718,71 @@ body.no-scroll {
 }
 .p-skills__buildup__time-wrap p {
   text-align: center;
+}
+
+.p-works h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #303030;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .p-works h3 {
+    font-size: 1.6rem;
+  }
+}
+.p-works h3 span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #303030;
+}
+@media (max-width: 768px) {
+  .p-works h3 span {
+    font-size: 1.6rem;
+  }
+}
+
+.p-works__img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .p-works__img {
+    width: 80%;
+  }
+}
+
+.p-works__grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1024px) {
+  .p-works__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .p-works__grid {
+    gap: 50px;
+  }
+}
+
+.p-works__item {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.p-works__link-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 /*# sourceMappingURL=style.css.map */
