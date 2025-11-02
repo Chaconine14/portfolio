@@ -1,1 +1,35 @@
 @use "../../foundation/variables";
+
+.c-link-btn {
+    padding: 25px;
+    text-align: center;
+
+    @include variables.media-tb {
+        padding: 20px;
+    }
+
+    @include variables.media-sp {
+        padding: 16px;
+    }
+}
+
+.c-link-btn__buildup {
+    background: variables.$color-blue;
+    @include variables.font-en(2.2rem, 700, 1.4);
+    color: variables.$color-white;
+
+    .c-link-btn__buildup__jp {
+        @include variables.font-jp(2.2rem, 700, 1.4);
+    }
+}
+
+.c-link-btn__buildup,
+.c-link-btn__buildup__jp {
+    @include variables.media-tb {
+        font-size: 1.8rem;
+    }
+
+    @include variables.media-sp {
+        font-size: 1.6rem
+    }
+}

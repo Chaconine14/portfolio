@@ -1,1 +1,182 @@
 @use "../../foundation/variables";
+
+.p-skills__grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 30px;
+
+    @include variables.media-tb {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    @include variables.media-sp {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+}
+
+.p-skills {
+    h3 {
+        @include variables.font-en(2.4rem, 700, 1.4);
+        text-align: center;
+        padding: 15px;
+        padding-top: 40px;
+
+        @include variables.media-tb {
+            font-size: 1.8rem;
+            padding-top: 15px;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+
+        @include variables.media-tb {
+            width: 25%;
+        }
+
+        @include variables.media-sp {
+            width: 20%;
+            max-width: 90px;
+        }
+    }
+
+    hr {
+        color: variables.$color-gray;
+        width: 80%;
+        margin: 70px auto;
+
+        @include variables.media-tb {
+            margin: 80px auto;
+        }
+
+        @include variables.media-sp {
+            margin: 60px auto;
+        }
+
+    }
+
+}
+
+
+
+.p-skills__item {
+    @include variables.media-sp {
+        align-items: center;
+        display: grid;
+    }
+}
+
+.p-skills__item p {
+    @include variables.media-sp {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+
+.p-skills__icon-two {
+    display: flex;
+
+    img:first-child {
+        margin-right: 10px;
+    }
+
+    img:last-child {
+        margin-left: 10px;
+    }
+}
+
+.p-skills__buildup {
+    display: grid;
+    justify-content: center;
+
+    .p-skills__h2__jp {
+        @include variables.font-jp(2.8rem, 700, 1.4);
+
+        @include variables.media-tb {
+            font-size: 2.4rem;
+        }
+
+        @include variables.media-sp {
+            font-size: 2.2rem;
+        }
+
+        p {
+            text-align: center;
+            @include variables.font-jp(2.4rem, 700, 1.4);
+
+        }
+    }
+}
+
+.p-skills__buildup {
+    b {
+        @include variables.font-en(7.0rem, 700, 1.4);
+        color: variables.$color-blue;
+
+        @include variables.media-tb {
+            font-size: 6.0rem;
+        }
+
+        @include variables.media-sp {
+            font-size: 5.0rem;
+        }
+    }
+}
+
+
+.p-skills__buildup {
+    .c-link-btn {
+        background: variables.$color-blue;
+        @include variables.font-en(2.2rem, 700, 1.4);
+        color: variables.$color-white;
+
+        span {
+            @include variables.font-jp(2.2rem, 700, 1.4);
+            color: variables.$color-white;
+        }
+    }
+}
+
+.p-skills {
+    .p-skills__buildup {
+
+        .c-link-btn,
+        span {
+            @include variables.media-tb {
+                font-size: 1.8rem;
+            }
+
+            @include variables.media-sp {
+                font-size: 1.6rem
+            }
+        }
+    }
+}
+
+.p-skills__buildup {
+    .p-skills__buildup__date {
+        @include variables.font-jp(1.8rem, 400, 1.4);
+
+        @include variables.media-tb {
+            font-size: 1.6rem;
+        }
+
+        @include variables.media-sp {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.p-skills__buildup__time-wrap {
+    padding: 30px;
+    padding-bottom: 80px;
+
+    p {
+        text-align: center;
+    }
+}

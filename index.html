@@ -52,7 +52,7 @@
                         <p class="p-about-deco__p">
                             <span class="p-about-deco__span">
                                 はじめまして。<br>
-                                Webコーダーの<b class="u-font-blue">Sae</b>と申します。<br>
+                                Webコーダーの<b>Sae</b>と申します。<br>
                                 <span class="p-about__text-space"></span>
                                 長年、アコースティックギターでの弾き語り活動を行っていました。
                                 音楽活動をしていく中で、作詞作曲やグッズデザイン、ライブ企画などを通し、
@@ -76,58 +76,74 @@
             </section>
 
             <!-- Skillsエリア -->
-            <section class="c-text-box">
+            <section class="c-text-box p-skills">
                 <h2>Skills</h2>
 
-                <article>
-                    <img src="#" alt="HTMLのアイコン">
-                    <img src="#" alt="CSSのアイコン">
-                    <h3>HTML / CSS / Sass</h3>
-                    <p>
-                        意味を意識したセマンティックなHTMLを心がけています。CSS設計にはFLOCSSを採用し、保守性と可読性の高いコードを書くように意識しています。Sassを活用し、効率的にスタイルを管理。
-                        レスポンシブにも柔軟に対応できます。
-                    </p>
-                </article>
+                <div class="p-skills__grid">
+                    <article class="p-skills__item">
+                        <img src="./images/HTML.svg" alt="HTMLのアイコン">
+                        <h3>HTML</h3>
+                        <p>
+                            意味を意識したセマンティックなマークアップを心がけています。
+                            情報の構造を正しく整理し、誰が見ても理解しやすいコードを書くことを大切にしています。
+                        </p>
+                    </article>
 
-                <article>
-                    <img src="#" alt="JSのアイコン">
-                    <h3>JavaScript / jQuery</h3>
-                    <p>
-                        ハンバーガーメニュー、アコーディオンなどのUI実装が可能です。デザインの世界観を崩さない動きを意識しながら、ユーザーにとって心地よい操作体験を目指しています。
-                    </p>
-                </article>
+                    <article class="p-skills__item">
+                        <img src="./images/CSS.svg" alt="CSSのアイコン">
+                        <h3>CSS / Sass</h3>
+                        <p>
+                            CSS設計にはFLOCSSを採用し、保守性と可読性の高いコードを意識しています。
+                            Sassを活用して効率的にスタイルを管理し、レスポンシブデザインにも柔軟に対応できます。
+                        </p>
+                    </article>
 
-                <article>
-                    <img src="#" alt="WordPressのアイコン">
-                    <img src="#" alt="PHPのロゴ">
-                    <h3>WordPress / PHP</h3>
-                    <p>
-                        オリジナルテーマを作成できます。制作時には、運用を行うクライアント様の使いやすさを第一に考えています。
-                    </p>
-                </article>
+                    <article class="p-skills__item">
+                        <img src="./images/JS.svg" alt="JSのアイコン">
+                        <h3>JavaScript / jQuery</h3>
+                        <p>
+                            ハンバーガーメニュー、アコーディオンなどのUI実装が可能です。デザインの世界観を崩さない動きを意識しながら、ユーザーにとって心地よい操作体験を目指しています。
+                        </p>
+                    </article>
 
-                <article>
-                    <img src="#" alt="GitHubのアイコン">
-                    <h3>Git / GitHub</h3>
-                    <p>
-                        GitHubでのバージョン管理に慣れており、チーム開発にも対応できます。
-                    </p>
-                </article>
+                    <article class="p-skills__item">
+                        <div class="p-skills__icon-two">
+                            <img src="./images/WP.svg" alt="WordPressのアイコン">
+                            <img src="./images/PHP.svg" alt="PHPのロゴ">
+                        </div>
+                        <h3>WordPress / PHP</h3>
+                        <p>
+                            オリジナルテーマを作成できます。制作時には、運用を行うクライアント様の使いやすさを第一に考えています。
+                        </p>
+                    </article>
 
-                <article>
-                    <img src="#" alt="ツール風のアイコン">
-                    <h3>Tools</h3>
-                    <p>
-                        Visual Studio Code / Local / FileZilla
-                        環境構築からFTPデプロイまで、一通りの制作フローを理解しています。現在はRaiseTechデザインコースにてWebデザインも学習中です。
-                    </p>
-                </article>
 
-                <div>
-                    <h2>総学習時間</h2>
-                    <p><strong>565</strong>時間</p>
-                    <p>（2025/10/20 現在）</p>
-                    <a href="#">BuildUP 学習記録　＞</a>
+                    <article class="p-skills__item">
+                        <img src="./images/GitHub.svg" alt="GitHubのアイコン">
+                        <h3>Git / GitHub</h3>
+                        <p>
+                            GitHubでのバージョン管理に慣れており、チーム開発にも対応できます。
+                        </p>
+                    </article>
+
+                    <article class="p-skills__item">
+                        <img src="./images/Tools.svg" alt="ツール風のアイコン">
+                        <h3>Tools</h3>
+                        <p>
+                            Visual Studio Code・Local・FileZillaを使い、環境構築からFTPデプロイまで一通りの制作フローを理解しています。<br>
+                            また、Figmaでのデザインカンプ作成や、RaiseTechデザインコースでの学習を通じて、デザインスキルも磨いています。
+                        </p>
+                    </article>
+                </div>
+                <hr>
+                <div class="p-skills__buildup">
+                    <h2 class="p-skills__h2__jp">総学習時間</h2>
+                    <div class="p-skills__buildup__time-wrap">
+                        <p><b>565</b>時間</p>
+                        <p class="p-skills__buildup__date">（2025/10/20 現在）</p>
+                    </div>
+                    <a href="#" class="c-link-btn c-link-btn__buildup">BuildUP <span
+                            class="c-link-btn__buildup__jp">学習記録</span>　＞</a>
                 </div>
             </section>
 

@@ -85,6 +85,54 @@ body.no-scroll {
   }
 }
 
+.c-link-btn {
+  padding: 25px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .c-link-btn {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .c-link-btn {
+    padding: 16px;
+  }
+}
+
+.c-link-btn__buildup {
+  background: #41A4BE;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #303030;
+  color: #FFF;
+}
+.c-link-btn__buildup .c-link-btn__buildup__jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #303030;
+}
+
+@media (max-width: 1024px) {
+  .c-link-btn__buildup,
+.c-link-btn__buildup__jp {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .c-link-btn__buildup,
+.c-link-btn__buildup__jp {
+    font-size: 1.6rem;
+  }
+}
+
 .c-text-box {
   margin: 95px;
   padding: 70px;
@@ -361,6 +409,9 @@ body.no-scroll {
 .p-about-wrap__text-area p {
   padding: 45px;
 }
+.p-about-wrap__text-area b {
+  color: #41A4BE;
+}
 
 .p-about-wrap__text-area .p-about-deco__span::before,
 .p-about-wrap__text-area .p-about-deco__span::after,
@@ -429,7 +480,210 @@ body.no-scroll {
   }
 }
 
-.u-font-blue {
+.p-skills__grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+}
+@media (max-width: 1024px) {
+  .p-skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+}
+
+.p-skills h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: #303030;
+  text-align: center;
+  padding: 15px;
+  padding-top: 40px;
+}
+@media (max-width: 1024px) {
+  .p-skills h3 {
+    font-size: 1.8rem;
+    padding-top: 15px;
+  }
+}
+.p-skills img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .p-skills img {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills img {
+    width: 20%;
+    max-width: 90px;
+  }
+}
+.p-skills hr {
+  color: #303030;
+  width: 80%;
+  margin: 70px auto;
+}
+@media (max-width: 1024px) {
+  .p-skills hr {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills hr {
+    margin: 60px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-skills__item {
+    align-items: center;
+    display: grid;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-skills__item p {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.p-skills__icon-two {
+  display: flex;
+}
+.p-skills__icon-two img:first-child {
+  margin-right: 10px;
+}
+.p-skills__icon-two img:last-child {
+  margin-left: 10px;
+}
+
+.p-skills__buildup {
+  display: grid;
+  justify-content: center;
+}
+.p-skills__buildup .p-skills__h2__jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  color: #303030;
+}
+@media (max-width: 1024px) {
+  .p-skills__buildup .p-skills__h2__jp {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills__buildup .p-skills__h2__jp {
+    font-size: 2.2rem;
+  }
+}
+.p-skills__buildup .p-skills__h2__jp p {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: #303030;
+}
+
+.p-skills__buildup b {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1.4;
+  color: #303030;
   color: #41A4BE;
+}
+@media (max-width: 1024px) {
+  .p-skills__buildup b {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills__buildup b {
+    font-size: 5rem;
+  }
+}
+
+.p-skills__buildup .c-link-btn {
+  background: #41A4BE;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #303030;
+  color: #FFF;
+}
+.p-skills__buildup .c-link-btn span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #303030;
+  color: #FFF;
+}
+
+@media (max-width: 1024px) {
+  .p-skills .p-skills__buildup .c-link-btn,
+.p-skills .p-skills__buildup span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills .p-skills__buildup .c-link-btn,
+.p-skills .p-skills__buildup span {
+    font-size: 1.6rem;
+  }
+}
+
+.p-skills__buildup .p-skills__buildup__date {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #303030;
+}
+@media (max-width: 1024px) {
+  .p-skills__buildup .p-skills__buildup__date {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .p-skills__buildup .p-skills__buildup__date {
+    font-size: 1.4rem;
+  }
+}
+
+.p-skills__buildup__time-wrap {
+  padding: 30px;
+  padding-bottom: 80px;
+}
+.p-skills__buildup__time-wrap p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
