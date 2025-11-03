@@ -1,1 +1,12 @@
 @use "../../foundation/variables";
+
+.p-contact {
+    iframe {
+        width: 100%;
+        height: 950px;
+
+        @include variables.media-sp {
+            height: 1000px;
+        }
+    }
+}

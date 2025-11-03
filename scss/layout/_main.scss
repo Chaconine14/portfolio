@@ -1,6 +1,25 @@
 @use "../foundation/variables";
 
+
 .l-main__bg {
+    position: relative;
+    z-index: 0;
     background: linear-gradient(variables.$color-white 0%, variables.$color-beige 10%, variables.$color-blue 71%, variables.$color-navy 100%);
 
+}
+
+.l-main__bg::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-image:
+        url(../../images/5-fish.svg),
+        url(../../images/2-fish.svg),
+        url(../../images/3-fish.svg),
+        url(../../images/1-fish.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 45%, 6% 29%, 2% 77%, 85% 97%;
+    background-size: 80px, 63px, 87px, 48px;
+    pointer-events: none;
 }

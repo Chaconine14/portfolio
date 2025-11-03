@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -54,7 +55,21 @@ body.no-scroll {
 }
 
 .l-main__bg {
+  position: relative;
+  z-index: 0;
   background: linear-gradient(#FFF 0%, #EAE3DD 10%, #41A4BE 71%, #131E3E 100%);
+}
+
+.l-main__bg::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-image: url(../../images/5-fish.svg), url(../../images/2-fish.svg), url(../../images/3-fish.svg), url(../../images/1-fish.svg);
+  background-repeat: no-repeat;
+  background-position: 98% 45%, 6% 29%, 2% 77%, 85% 97%;
+  background-size: 80px, 63px, 87px, 48px;
+  pointer-events: none;
 }
 
 .l-footer {
@@ -784,5 +799,15 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.p-contact iframe {
+  width: 100%;
+  height: 950px;
+}
+@media (max-width: 768px) {
+  .p-contact iframe {
+    height: 1000px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
