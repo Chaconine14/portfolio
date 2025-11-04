@@ -1,0 +1,119 @@
+@use "../../foundation/variables";
+
+.p-works-page__logo {
+    height: 85px;
+    padding-left: 20px;
+}
+
+.p-works-page {
+    h2 {
+        text-align: left;
+        @include variables.font-jp(2.8rem, 700, 1.4);
+
+        @include variables.media-tb {
+            font-size: 2.4rem;
+        }
+
+        @include variables.media-sp {
+            font-size: 2.2rem;
+        }
+
+    }
+}
+
+.p-works-page__img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+
+.p-works__link-btn__works-page {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    @include variables.media-sp {
+        gap: 25px;
+    }
+}
+
+.p-works-page__textarea {
+    display: flex;
+    @include variables.font-jp(1.6rem, 400, 1.8);
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+
+    @include variables.media-tb {
+        font-size: 1.4rem;
+    }
+
+    @include variables.media-sp {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+}
+
+.p-works-page__listarea {
+    width: 30%;
+    padding: 25px;
+
+    @include variables.media-sp {
+        width: 100%;
+        min-height: 400px;
+    }
+}
+
+.p-works-page__listitems {
+    padding-bottom: 2.2rem;
+}
+
+
+.p-works-page__comment {
+    width: 65%;
+    border: 1px solid variables.$color-gray;
+    padding: 25px;
+    background: variables.$color-white;
+    position: relative;
+
+    @include variables.media-tb {
+        padding-bottom: 60px;
+    }
+
+    @include variables.media-sp {
+        width: 100%;
+    }
+
+    hr {
+        width: 55%;
+        color: variables.$color-gray;
+        margin: 16px 0;
+    }
+}
+
+.p-works-page__list__indent {
+    padding-left: 1.5rem;
+}
+
+
+.p-works-page__list__mark {
+    padding-left: 1.5rem;
+    list-style-type: "-";
+}
+
+
+.p-works-page__comment__fish {
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+
+    @include variables.media-sp {
+        width: 35px;
+        right: 5px;
+        bottom: 5px;
+    }
+}

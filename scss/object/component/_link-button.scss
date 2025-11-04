@@ -34,6 +34,13 @@
     }
 }
 
+.p-skills__buildup {
+    .c-link-btn__buildup:hover {
+        background: variables.$color-beige;
+        transition: .3s;
+    }
+}
+
 .c-link-btn__github {
     display: flex;
     gap: 6px;
@@ -59,4 +66,10 @@
         width: 125px;
         padding: 12px 7px;
     }
+}
+
+.c-link-btn__github:hover,
+.c-link-btn__viewmore:hover {
+    background: variables.$color-beige;
+    transition: .3s;
 }
