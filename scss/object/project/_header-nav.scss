@@ -27,6 +27,11 @@
         a {
             color: variables.$color-white;
         }
+
+        a:hover {
+            color: #999;
+        }
+
     }
 }
 

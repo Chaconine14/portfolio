@@ -36,7 +36,7 @@
 
 .p-skills__buildup {
     .c-link-btn__buildup:hover {
-        background: variables.$color-beige;
+        background: #368fa7;
         transition: .3s;
     }
 }
@@ -70,6 +70,6 @@
 
 .c-link-btn__github:hover,
 .c-link-btn__viewmore:hover {
-    background: variables.$color-beige;
+    background: #999;
     transition: .3s;
 }

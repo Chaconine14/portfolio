@@ -1,8 +1,13 @@
 @use "../../foundation/variables";
 
 .p-works-page__logo {
-    height: 85px;
-    padding-left: 20px;
+    display: none;
+
+    @include variables.media-tb {
+        display: block;
+        height: 85px;
+        padding-left: 20px;
+    }
 }
 
 .p-works-page {
@@ -16,6 +21,10 @@
 
         @include variables.media-sp {
             font-size: 2.2rem;
+        }
+
+        span {
+            font-family: "Poppins", sans-serif;
         }
 
     }
