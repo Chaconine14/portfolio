@@ -4,19 +4,37 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .p-logo {
     width: 250px;
     display: block;
-    transform: translateY(-140px);
 
     @include variables.media-tb {
-        transform: translateY(0);
         width: 143px;
     }
 
     @include variables.media-sp {
         width: 88px;
     }
+}
+
+
+.js-whale {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // z-index: -2;
+
+
+}
+
+.js-whale2 {
+    position: fixed;
+    right: 1%;
+    bottom: 0;
+    width: 10%;
+    z-index: 2;
 }
