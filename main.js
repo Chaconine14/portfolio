@@ -54,7 +54,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // クジラのロゴをゆらゆら揺らすアニメーション
 gsap.fromTo(
-    ".js-whale, .js-whale2",
+    ".js-whale, .js-whale2, .js-whale3",
     {
         y: 0,
         rotation: -20,       // 傾ける角度（時計回り＝左端が下がる）

@@ -5,8 +5,10 @@
 
     @include variables.media-tb {
         display: block;
-        height: 85px;
+        // height: 85px;
         padding-left: 20px;
+        padding-top: 50px;
+        width: 100px;
     }
 }
 
