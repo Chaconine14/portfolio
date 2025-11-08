@@ -1,6 +1,10 @@
-const menuBtn = document.querySelector('.p-header__btn');
-const header = document.querySelector('.l-header');
-const links = document.querySelectorAll('.p-header__nav a');
+//============================================
+//ハンバーガーメニュー開閉
+//============================================
+
+const menuBtn = document.querySelector('.js-header-nav__btn');
+const header = document.querySelector('.js-header');
+const links = document.querySelectorAll('.js-header-nav__list a');
 
 // メニュー開閉共通処理
 function toggleMenu() {
@@ -24,7 +28,10 @@ links.forEach(link => {
             const hrefValue = link.getAttribute('href');// クリックされたリンクのhrefを取る
             const targetSection = document.querySelector(hrefValue);// hrefで指定されたセクションを探す
 
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });//探し出したセクションまでスクロールする
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });//探し出したセクションまでスクロールする
         }
     });
 });
@@ -41,6 +48,7 @@ window.addEventListener('resize', () => {
 //============================================
 //GSAPアニメーション
 //============================================
+
 gsap.registerPlugin(ScrollTrigger);
 
 

@@ -1,29 +1,32 @@
 @use "../../foundation/variables";
 
-.p-header__nav {
+.p-header-nav {
     height: 100%;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        height: 100%;
+    }
+
+    &__list-item {
+        @include variables.font-en(3.6rem, 700, 1.3);
+    }
 }
 
-
-.p-header__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    height: 100%;
-}
 
 .l-header.is-open {
     @include variables.media-tb {
-        .p-header__list {
-
+        .p-header-nav__list {
             flex-direction: column;
             justify-content: flex-start;
             padding-top: 50px;
         }
     }
 
-    .p-header__item {
+    .p-header-nav__list-item {
         a {
             color: variables.$color-white;
         }
@@ -31,26 +34,20 @@
         a:hover {
             color: #999;
         }
-
     }
 }
+
 
 .l-header.is-close {
     a {
         @include variables.media-tb {
             font-size: 0;
         }
-
     }
 }
 
 
-.p-header__item {
-    @include variables.font-en(3.6rem, 700, 1.3);
-}
-
-
-.p-header__btn {
+.p-header-nav__btn {
     display: none;
 
     @include variables.media-tb {
@@ -61,18 +58,12 @@
         right: 0;
         z-index: 10;
         top: 0;
-
-        p {
-            display: none;
-        }
     }
 }
 
 
-
-
-.p-header__btn::before {
-    //ハンバーガーの円
+.p-header-nav__btn::before {
+    //ハンバーガーの外の円
     display: block;
     content: "";
     width: 40px;
@@ -83,13 +74,12 @@
     margin: 0 auto;
 }
 
-.p-header__btn.is-open::before {
+.p-header-nav__btn.is-open::before {
     display: none;
 }
 
 
-
-.p-header__btn.is-close {
+.p-header-nav__btn.is-close {
     span::before {
         position: absolute;
         bottom: 8px;
@@ -109,6 +99,7 @@
         width: 23px;
         height: 2px;
         background-color: variables.$color-blue;
+        font-size: 0;
     }
 
     span::after {
@@ -124,8 +115,7 @@
 }
 
 
-
-.p-header__btn.is-open {
+.p-header-nav__btn.is-open {
     span::before {
         position: absolute;
         bottom: -2px;
@@ -144,6 +134,7 @@
         left: 14px;
         content: "";
         height: 0; //見えなくしている
+        font-size: 0;
     }
 
     span::after {
