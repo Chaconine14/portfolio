@@ -1,11 +1,9 @@
 @use "../foundation/variables";
 
-
 .l-main__bg {
     position: relative;
     z-index: 0;
     background: linear-gradient(variables.$color-white 0%, variables.$color-beige 10%, variables.$color-blue 71%, variables.$color-navy 100%);
-
 }
 
 .l-main__bg::after {
@@ -24,14 +22,14 @@
     pointer-events: none;
 }
 
-.l-main__bg__works-page {
+.l-main__bg--works-page {
     position: relative;
     z-index: 0;
     background: linear-gradient(variables.$color-white 0%, variables.$color-beige 10%, variables.$color-blue 71%, variables.$color-navy 100%);
 
 }
 
-.l-main__bg__works-page::after {
+.l-main__bg--works-page::after {
     content: "";
     position: absolute;
     z-index: 1;

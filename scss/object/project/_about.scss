@@ -37,7 +37,7 @@
 .p-about-wrap__text-area {
     position: relative;
 
-    p {
+    .p-about-deco__p {
         padding: 45px;
 
         @include variables.media-sp {
@@ -47,7 +47,6 @@
 
     b {
         color: variables.$color-blue;
-
     }
 }
 
@@ -115,14 +114,5 @@
             top: -5px;
             left: 5px;
         }
-    }
-}
-
-.p-about__text-space {
-    display: block;
-    height: 2.5rem;
-
-    @include variables.media-tb {
-        height: 1.8rem;
     }
 }

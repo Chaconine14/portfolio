@@ -2,7 +2,7 @@
 
 .l-header {
     height: 140px;
-    transition: transform 0.3s ease; // ← アニメーションはここで統一！
+    transition: transform 0.3s ease;
 
     @include variables.media-tb {
         height: 50px;

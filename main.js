@@ -15,8 +15,10 @@ function toggleMenu() {
     document.body.classList.toggle('no-scroll');
 }
 
+
 // ハンバーガーで開閉
 menuBtn.addEventListener('click', toggleMenu);
+
 
 // メニューリンククリック時の動作
 links.forEach(link => {
@@ -36,13 +38,13 @@ links.forEach(link => {
     });
 });
 
+
 //画面サイズがPCになったら、サイドメニューを閉じる
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 1025 && header.classList.contains('is-open')) {
         toggleMenu();
     }
 });
-
 
 
 //============================================
@@ -73,7 +75,6 @@ gsap.fromTo(
 );
 
 
-
 // 左下へ見切れる
 const tl1 = gsap.timeline({
     scrollTrigger: {
@@ -88,7 +89,6 @@ tl1.to(".js-whale", {
     x: "-65vw",      // ゆったり左下へ
     y: "50vh",
 });
-
 
 
 // 右下でフェードインして停止（揺れは継続）
@@ -112,8 +112,6 @@ tl2.fromTo(
         ease: "power2.out", // ← やわらかくフェードイン    
     }
 );
-
-
 
 
 // クジラロゴ（右下）クリックでスムーススクロール

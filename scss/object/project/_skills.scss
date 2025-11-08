@@ -62,7 +62,6 @@
 }
 
 
-
 .p-skills__item {
     @include variables.media-sp {
         align-items: center;
@@ -95,7 +94,7 @@
     display: grid;
     justify-content: center;
 
-    .p-skills__h2__jp {
+    .p-skills__h2 {
         @include variables.font-jp(2.8rem, 700, 1.4);
 
         @include variables.media-tb {
@@ -108,8 +107,7 @@
 
         p {
             text-align: center;
-            @include variables.font-jp(2.4rem, 700, 1.4);
-
+            font-size: 2.4rem;
         }
     }
 }
@@ -143,6 +141,7 @@
         }
     }
 }
+
 
 .p-skills__buildup__time-wrap {
     padding: 30px;

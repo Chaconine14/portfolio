@@ -72,13 +72,13 @@ body.no-scroll {
   pointer-events: none;
 }
 
-.l-main__bg__works-page {
+.l-main__bg--works-page {
   position: relative;
   z-index: 0;
   background: linear-gradient(#FFF 0%, #EAE3DD 10%, #41A4BE 71%, #131E3E 100%);
 }
 
-.l-main__bg__works-page::after {
+.l-main__bg--works-page::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -497,11 +497,11 @@ body.no-scroll {
 .p-about-wrap__text-area {
   position: relative;
 }
-.p-about-wrap__text-area p {
+.p-about-wrap__text-area .p-about-deco__p {
   padding: 45px;
 }
 @media (max-width: 768px) {
-  .p-about-wrap__text-area p {
+  .p-about-wrap__text-area .p-about-deco__p {
     padding: 30px;
   }
 }
@@ -567,16 +567,6 @@ body.no-scroll {
     height: 70px;
     top: -5px;
     left: 5px;
-  }
-}
-
-.p-about__text-space {
-  display: block;
-  height: 2.5rem;
-}
-@media (max-width: 1024px) {
-  .p-about__text-space {
-    height: 1.8rem;
   }
 }
 
@@ -675,7 +665,7 @@ body.no-scroll {
   display: grid;
   justify-content: center;
 }
-.p-skills__buildup .p-skills__h2__jp {
+.p-skills__buildup .p-skills__h2 {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -685,24 +675,18 @@ body.no-scroll {
   color: #303030;
 }
 @media (max-width: 1024px) {
-  .p-skills__buildup .p-skills__h2__jp {
+  .p-skills__buildup .p-skills__h2 {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 768px) {
-  .p-skills__buildup .p-skills__h2__jp {
+  .p-skills__buildup .p-skills__h2 {
     font-size: 2.2rem;
   }
 }
-.p-skills__buildup .p-skills__h2__jp p {
+.p-skills__buildup .p-skills__h2 p {
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 700;
   font-size: 2.4rem;
-  line-height: 1.4;
-  color: #303030;
 }
 
 .p-skills__buildup b {
@@ -813,7 +797,7 @@ body.no-scroll {
   padding-bottom: 40px;
 }
 
-.p-works__link-btn {
+.p-works__link-btn-wrap {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -872,18 +856,18 @@ body.no-scroll {
   padding-bottom: 50px;
 }
 
-.p-works__link-btn__works-page {
+.p-works__link-btn-wrap--works-page {
   display: flex;
   justify-content: center;
   gap: 100px;
 }
 @media (max-width: 768px) {
-  .p-works__link-btn__works-page {
+  .p-works__link-btn-wrap--works-page {
     gap: 25px;
   }
 }
 
-.p-works-page__textarea {
+.p-works-page__text-area {
   display: flex;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
@@ -897,33 +881,33 @@ body.no-scroll {
   z-index: 1;
 }
 @media (max-width: 1024px) {
-  .p-works-page__textarea {
+  .p-works-page__text-area {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 768px) {
-  .p-works-page__textarea {
+  .p-works-page__text-area {
     flex-direction: column;
     font-size: 1.2rem;
   }
 }
 
-.p-works-page__listarea {
+.p-works-page__list-area {
   width: 30%;
   padding: 25px;
 }
 @media (max-width: 768px) {
-  .p-works-page__listarea {
+  .p-works-page__list-area {
     width: 100%;
     min-height: 400px;
   }
 }
 
-.p-works-page__listitems {
+.p-works-page__list-items {
   padding-bottom: 2.2rem;
 }
 
-.p-works-page__comment {
+.p-works-page__comment-area {
   width: 65%;
   border: 1px solid #303030;
   padding: 25px;
@@ -931,16 +915,16 @@ body.no-scroll {
   position: relative;
 }
 @media (max-width: 1024px) {
-  .p-works-page__comment {
+  .p-works-page__comment-area {
     padding-bottom: 60px;
   }
 }
 @media (max-width: 768px) {
-  .p-works-page__comment {
+  .p-works-page__comment-area {
     width: 100%;
   }
 }
-.p-works-page__comment hr {
+.p-works-page__comment-area hr {
   width: 55%;
   color: #303030;
   margin: 16px 0;
@@ -955,21 +939,30 @@ body.no-scroll {
   list-style-type: "-";
 }
 
-.p-works-page__comment__fish {
+.p-works-page__comment-area__fish {
   width: 50px;
   position: absolute;
   right: 20px;
   bottom: 12px;
 }
 @media (max-width: 768px) {
-  .p-works-page__comment__fish {
+  .p-works-page__comment-area__fish {
     width: 35px;
     right: 5px;
     bottom: 5px;
   }
 }
 
-.u-space {
+.p-works-page .u-space {
   padding-bottom: 1.8rem;
+}
+
+.p-about .u-space {
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 1024px) {
+  .p-about .u-space {
+    padding-bottom: 1.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
