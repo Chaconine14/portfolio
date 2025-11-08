@@ -19,7 +19,7 @@
     color: variables.$color-white;
 
     .c-link-btn__buildup__jp {
-        @include variables.font-jp(2.2rem, 700, 1.4);
+        font-family: "Noto Sans JP", sans-serif;
     }
 }
 

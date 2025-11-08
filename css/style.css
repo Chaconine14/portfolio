@@ -145,12 +145,6 @@ body.no-scroll {
 }
 .c-link-btn__buildup .c-link-btn__buildup__jp {
   font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  color: #303030;
 }
 
 @media (max-width: 1024px) {
@@ -451,7 +445,7 @@ body.no-scroll {
 
 .js-whale {
   position: absolute;
-  bottom: 40%;
+  bottom: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -462,6 +456,11 @@ body.no-scroll {
   bottom: 0;
   width: 10%;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .js-whale2 {
+    width: 15%;
+  }
 }
 
 .p-about b {
@@ -504,6 +503,11 @@ body.no-scroll {
 .p-about-wrap__text-area p {
   padding: 45px;
 }
+@media (max-width: 768px) {
+  .p-about-wrap__text-area p {
+    padding: 30px;
+  }
+}
 .p-about-wrap__text-area b {
   color: #41A4BE;
 }
@@ -526,6 +530,7 @@ body.no-scroll {
   .p-about-wrap__text-area .p-about-deco__span::before {
     width: 120px;
     bottom: 15px;
+    right: -15px;
   }
 }
 .p-about-wrap__text-area .p-about-deco__span::after {
@@ -538,6 +543,7 @@ body.no-scroll {
   .p-about-wrap__text-area .p-about-deco__span::after {
     height: 70px;
     bottom: -5px;
+    right: 5px;
   }
 }
 .p-about-wrap__text-area .p-about-deco__p::before {
@@ -550,6 +556,7 @@ body.no-scroll {
   .p-about-wrap__text-area .p-about-deco__p::before {
     width: 120px;
     top: 15px;
+    left: -15px;
   }
 }
 .p-about-wrap__text-area .p-about-deco__p::after {
@@ -562,6 +569,7 @@ body.no-scroll {
   .p-about-wrap__text-area .p-about-deco__p::after {
     height: 70px;
     top: -5px;
+    left: 5px;
   }
 }
 
@@ -651,7 +659,7 @@ body.no-scroll {
 
 @media (max-width: 768px) {
   .p-skills__item p {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -717,40 +725,6 @@ body.no-scroll {
 @media (max-width: 768px) {
   .p-skills__buildup b {
     font-size: 5rem;
-  }
-}
-
-.p-skills__buildup .c-link-btn {
-  background: #41A4BE;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  color: #303030;
-  color: #FFF;
-}
-.p-skills__buildup .c-link-btn span {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  color: #303030;
-  color: #FFF;
-}
-
-@media (max-width: 1024px) {
-  .p-skills .p-skills__buildup .c-link-btn,
-.p-skills .p-skills__buildup span {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 768px) {
-  .p-skills .p-skills__buildup .c-link-btn,
-.p-skills .p-skills__buildup span {
-    font-size: 1.6rem;
   }
 }
 

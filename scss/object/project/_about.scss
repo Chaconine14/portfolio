@@ -39,6 +39,10 @@
 
     p {
         padding: 45px;
+
+        @include variables.media-sp {
+            padding: 30px;
+        }
     }
 
     b {
@@ -67,6 +71,7 @@
         @include variables.media-sp {
             width: 120px;
             bottom: 15px;
+            right: -15px;
         }
     }
 
@@ -80,6 +85,7 @@
         @include variables.media-sp {
             height: 70px;
             bottom: -5px;
+            right: 5px;
         }
     }
 
@@ -92,6 +98,7 @@
         @include variables.media-sp {
             width: 120px;
             top: 15px;
+            left: -15px;
 
         }
 
@@ -106,6 +113,7 @@
         @include variables.media-sp {
             height: 70px;
             top: -5px;
+            left: 5px;
         }
     }
 }

@@ -72,8 +72,9 @@
 
 .p-skills__item p {
     @include variables.media-sp {
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
+
     }
 }
 
@@ -128,35 +129,6 @@
     }
 }
 
-
-.p-skills__buildup {
-    .c-link-btn {
-        background: variables.$color-blue;
-        @include variables.font-en(2.2rem, 700, 1.4);
-        color: variables.$color-white;
-
-        span {
-            @include variables.font-jp(2.2rem, 700, 1.4);
-            color: variables.$color-white;
-        }
-    }
-}
-
-.p-skills {
-    .p-skills__buildup {
-
-        .c-link-btn,
-        span {
-            @include variables.media-tb {
-                font-size: 1.8rem;
-            }
-
-            @include variables.media-sp {
-                font-size: 1.6rem
-            }
-        }
-    }
-}
 
 .p-skills__buildup {
     .p-skills__buildup__date {
