@@ -19,10 +19,6 @@ li {
   list-style: none;
 }
 
-h1 {
-  display: none;
-}
-
 .l-header {
   height: 140px;
   transition: transform 0.3s ease;
@@ -423,6 +419,29 @@ body.no-scroll {
   display: grid;
   place-items: center;
   position: relative;
+}
+.p-logo-area h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  color: #303030;
+  position: absolute;
+  bottom: 45%;
+  color: #999;
+}
+@media (max-width: 1024px) {
+  .p-logo-area h1 {
+    font-size: 1.8rem;
+    bottom: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .p-logo-area h1 {
+    font-size: 1.6rem;
+    bottom: 35%;
+  }
 }
 
 .p-logo {
